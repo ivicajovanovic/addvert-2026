@@ -5,6 +5,8 @@ export const SITE_URL =
 
 export const SITE_NAME = "ADD VERT"
 
+export const GOOGLE_ANALYTICS_ID = "G-4EHFES8DG8"
+
 export const BUSINESS = {
   name: "ADD VERT - Vezionica i štamparija",
   tagline: "Mašinski vez i DTF štampa. Od 2016.",

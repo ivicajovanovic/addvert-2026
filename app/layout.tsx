@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Viewport } from "next"
 import { Inter } from "next/font/google"
+import { GoogleAnalytics } from "@/components/google-analytics"
 import { JsonLd } from "@/components/json-ld"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
@@ -34,6 +35,7 @@ export default function RootLayout({
     <html lang="sr" className="dark">
       <head>
         <JsonLd data={[getWebSiteJsonLd(), getLocalBusinessJsonLd()]} />
+        <GoogleAnalytics />
       </head>
       <body className={cn("min-h-screen bg-background font-sans text-foreground antialiased", inter.variable)}>
         <SiteHeader />
