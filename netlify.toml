@@ -1,0 +1,17 @@
+# ADD VERT — Netlify (Next.js 16, OpenNext adapter auto-applied by Netlify)
+# Docs: https://docs.netlify.com/build/frameworks/framework-setup-guides/nextjs/overview/
+
+[build]
+  command = "pnpm typecheck && pnpm lint && pnpm build"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Set in Netlify UI → Site configuration → Environment variables:
+  # NEXT_PUBLIC_SITE_URL = https://addvert.net
+
+[context.production.environment]
+  NEXT_PUBLIC_SITE_URL = "https://addvert.net"
+
+[context.deploy-preview.environment]
+  # Preview URLs use Netlify subdomain; override only if you need absolute URLs in previews.
+  # NEXT_PUBLIC_SITE_URL = "https://deploy-preview-123--addvert.netlify.app"
