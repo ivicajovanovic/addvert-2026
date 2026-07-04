@@ -6,9 +6,9 @@ import { buildPageMetadata } from "@/lib/metadata"
 import { getBreadcrumbJsonLd, getGalleryPageJsonLd } from "@/lib/structured-data"
 
 const galleryMetadata = buildPageMetadata({
-  title: "Galerija radova: mašinski vez, DTF štampa i brendiranje",
+  title: "Galerija radova: peškiri sa logom, majice, amblemi i uniforme",
   description:
-    "35 primera mašinskog veza, DTF štampe i reklamnog brendiranja: majice, uniforme, izloge, vozila i promo materijal. ADD VERT, isporuka po Srbiji.",
+    "Primeri mašinskog veza i DTF štampe: peškiri sa logom, majice, duksevi, kačketi, vezeni amblemi, uniforme i radna odeća za klijente širom Srbije.",
   path: "/galerija",
 })
 
@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   keywords: [
     "galerija mašinskog veza",
     "DTF štampa galerija",
+    "peškiri sa logom",
+    "majice sa logom firme",
+    "vezeni amblemi",
+    "radna odeća sa logom",
     "brendiranje izloga primeri",
     "vez na uniformama Srbija",
     "vez na peškirima hoteli",

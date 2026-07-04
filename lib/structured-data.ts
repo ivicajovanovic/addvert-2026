@@ -7,7 +7,7 @@ const MAP_LINK =
   "https://maps.google.com/?q=Vezionica+i+stamparija+ADD+VERT,+Petrovac+na+Mlavi"
 
 const BUSINESS_DESCRIPTION =
-  "Mašinski vez na peškirima, uniformama i posteljini za hotele, apartmane, restorane i ugostitelje. DTF štampa na tekstilu. Petrovac na Mlavi, Srbija."
+  "Profesionalni mašinski vez i DTF štampa na tekstilu: peškiri sa logom, majice, duksevi, kačketi, vezeni amblemi, uniforme i radna odeća sa logom za firme širom Srbije."
 
 export function getLocalBusinessJsonLd() {
   return {
@@ -32,6 +32,12 @@ export function getLocalBusinessJsonLd() {
       longitude: BUSINESS.geo.longitude,
     },
     hasMap: MAP_LINK,
+    areaServed: [
+      { "@type": "Country", name: "Srbija" },
+      { "@type": "City", name: "Petrovac na Mlavi" },
+      { "@type": "City", name: "Požarevac" },
+      { "@type": "AdministrativeArea", name: "Braničevski okrug" },
+    ],
     sameAs: SOCIAL_LINKS.map((social) => social.href),
     openingHoursSpecification: [
       {
@@ -51,7 +57,15 @@ export function getLocalBusinessJsonLd() {
         },
         {
           "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Peškiri sa logom i vezom za hotele, apartmane i poklone" },
+        },
+        {
+          "@type": "Offer",
           itemOffered: { "@type": "Service", name: "Vez na uniformama za ugostitelje i restorane" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Radna odeća sa logom za firme, servise i ugostiteljstvo" },
         },
         {
           "@type": "Offer",
@@ -60,6 +74,14 @@ export function getLocalBusinessJsonLd() {
         {
           "@type": "Offer",
           itemOffered: { "@type": "Service", name: "DTF štampa na majicama i promo tekstilu" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Majice, duksevi i kačketi sa logom" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Vezeni amblemi za klubove, udruženja i radne uniforme" },
         },
         {
           "@type": "Offer",
@@ -113,7 +135,7 @@ export function getBreadcrumbJsonLd(items: Array<{ name: string; path: string }>
 }
 
 const GALLERY_DESCRIPTION =
-  "Galerija radova ADD VERT: mašinski vez, DTF štampa i reklamno brendiranje: majice, uniforme, izloge, vozila i promo materijal."
+  "Galerija radova ADD VERT: peškiri sa logom, majice sa logom firme, duksevi, kačketi, vezeni amblemi, uniforme, radna odeća, DTF štampa i reklamno brendiranje."
 
 export function getGalleryPageJsonLd() {
   const galleryUrl = absoluteUrl("/galerija")

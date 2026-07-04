@@ -3,9 +3,9 @@ import { ShopCatalog } from "@/components/shop-catalog"
 import { buildPageMetadata } from "@/lib/metadata"
 
 export const metadata = buildPageMetadata({
-  title: "Personalizovani pokloni sa vezom | Peškiri, platna i pokloni po narudžbi",
+  title: "Personalizovani peškiri i pokloni sa vezom po narudžbi",
   description:
-    "Personalizovani pokloni sa vezom za krštenja, venčanja, bebe i posebne prilike. Peškiri, platna, ćebad, portikle i pokloni po narudžbi.",
+    "Personalizovani peškiri sa imenom, pokloni sa vezom, platna, ćebad i portikle za krštenja, venčanja, bebe i posebne prilike. Izrada po narudžbi.",
   path: "/shop",
 })
 

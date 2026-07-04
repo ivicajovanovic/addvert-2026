@@ -6,9 +6,9 @@ import { buildPageMetadata } from "@/lib/metadata"
 import { getFaqPageJsonLd } from "@/lib/structured-data"
 
 export const metadata = buildPageMetadata({
-  title: "Kontakt i upit za ponudu: vez na peškirima, uniformama i tekstilu",
+  title: "Kontakt za vez i DTF štampu | Petrovac i Požarevac",
   description:
-    "Pošaljite upit za vez na peškirima, hotelskim uniformama ili promo tekstilu. Odgovaramo u roku od 24 sata. Dostava po celoj Srbiji, pozovite ili pišite na WhatsApp.",
+    "Pošaljite upit za mašinski vez, DTF štampu, peškire sa logom, majice, uniforme i radnu odeću. Petrovac na Mlavi, Požarevac, Braničevo i cela Srbija.",
   path: "/kontakt",
 })
 
