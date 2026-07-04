@@ -6,18 +6,18 @@ import { ScrollReveal } from "./scroll-reveal"
 const commonRequests = [
   {
     id: "01",
-    title: "Peškiri sa logom",
-    description: "Za hotele, apartmane, spa centre i poklone. Mašinski vez na peškirima koji moraju da traju.",
+    title: "Vez na peškirima",
+    description: "Za hotele, apartmane, spa centre, krštenja i poklone. Radimo imena, inicijale, oznake i logotipe.",
   },
   {
     id: "02",
-    title: "Radna odeća sa logom",
+    title: "Radna odeća sa logotipom",
     description: "Uniforme, kecelje, prsluci, jakne i majice za restorane, servise, firme i terenske timove.",
   },
   {
     id: "03",
-    title: "Majice i duksevi sa logom",
-    description: "DTF štampa i vez za firme, klubove, promo kampanje, događaje i zaposlene.",
+    title: "Majice i duksevi sa štampom",
+    description: "DTF štampa za firme, klubove, promocije, događaje i zaposlene.",
   },
   {
     id: "04",
@@ -26,7 +26,7 @@ const commonRequests = [
   },
   {
     id: "05",
-    title: "Personalizovani pokloni",
+    title: "Personalizovani pokloni sa vezom",
     description: "Peškiri sa imenom, pokloni za bebe, krštenja, venčanja i posebne prilike.",
   },
 ] as const
@@ -39,15 +39,14 @@ export function CommonRequestsSection() {
           <div className="col-span-12 mb-12 lg:col-span-4 lg:mb-0">
             <ScrollReveal animation="slide-right" duration={500}>
               <p className="mb-4 font-mono text-xs uppercase tracking-[0.24em] text-white/45">
-                Šta najčešće radimo
+                Najčešće porudžbine
               </p>
               <h2 className="mb-6 text-4xl font-bold tracking-tighter text-white md:text-5xl">
-                Kupci najčešće ne traže tehniku, nego gotov proizvod.
+                Najčešći zahtevi koje dobijamo od klijenata.
               </h2>
               <div className="mb-6 h-1 w-12 bg-white" />
               <p className="max-w-sm text-lg leading-relaxed text-muted-foreground">
-                Zato najčešće upite prevodimo u konkretne narudžbine: peškiri sa logom, radna odeća, majice,
-                amblemi i personalizovani pokloni.
+                Od veza na peškirima i radnoj odeći do štampe na majicama, amblema i personalizovanih poklona.
               </p>
             </ScrollReveal>
           </div>
@@ -72,8 +71,8 @@ export function CommonRequestsSection() {
             <ScrollReveal animation="fade" delay={commonRequests.length * 80} duration={500}>
               <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <p className="max-w-xl text-sm leading-relaxed text-white/55">
-                  Ako već znate šta želite da brendirate, pošaljite kratak opis, količinu i rok. Predložićemo da li je
-                  bolji mašinski vez, DTF štampa ili kombinacija.
+                  Pošaljite šta želite da uradimo, količinu i rok. Predložićemo da li je bolji mašinski vez, DTF štampa
+                  ili kombinacija.
                 </p>
                 <Link
                   href="/kontakt"
