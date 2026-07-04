@@ -16,9 +16,9 @@ import { HomeFaqTeaser } from "@/components/home-faq-teaser"
 import { buildPageMetadata } from "@/lib/metadata"
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Mašinski vez i DTF štampa | ADD VERT, isporuka po Srbiji",
+  title: "Mašinski vez i DTF štampa | Brendiranje tekstila u Srbiji",
   description:
-    "Mašinski vez na peškirima, uniformama i posteljini za hotele, apartmane i restorane. Profesionalna vezionica i štamparija, isporuka po celoj Srbiji. Upit u roku od 24h.",
+    "Profesionalni mašinski vez i DTF štampa na tekstilu. Majice, duksevi, kačketi, amblemi i radna odeća sa logom za firme širom Srbije.",
   path: "/",
   absoluteTitle: true,
 })

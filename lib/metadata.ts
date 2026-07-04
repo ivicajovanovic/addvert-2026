@@ -76,11 +76,24 @@ export const ROOT_METADATA: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     template: `%s | ${SITE_NAME}`,
-    default: "Mašinski vez i DTF štampa | ADD VERT, isporuka po Srbiji",
+    default: "Mašinski vez i DTF štampa | Brendiranje tekstila u Srbiji",
   },
   description:
-    "Mašinski vez na peškirima, uniformama i posteljini za hotele, apartmane i restorane. Profesionalna vezionica i štamparija, isporuka po celoj Srbiji. Upit u roku od 24h.",
+    "Profesionalni mašinski vez i DTF štampa na tekstilu. Majice, duksevi, kačketi, amblemi i radna odeća sa logom za firme širom Srbije.",
   keywords: [
+    "mašinski vez",
+    "mašinski vez Srbija",
+    "DTF štampa",
+    "DTF štampa Srbija",
+    "štampa majica",
+    "štampa majica Srbija",
+    "vez na tekstilu",
+    "štampa na tekstilu",
+    "brendiranje tekstila",
+    "brendiranje odeće",
+    "radna odeća sa logom",
+    "majice sa logom",
+    "štampa i vez",
     "mašinski vez na peškirima",
     "vez na hotelskim peškirima",
     "vez za hotele",
@@ -92,13 +105,12 @@ export const ROOT_METADATA: Metadata = {
     "vez na peškirima Srbija",
     "vezionica Petrovac na Mlavi",
     "štamparija Petrovac na Mlavi",
-    "mašinski vez Srbija",
     "DTF štampa na tekstilu",
   ],
   openGraph: {
-    title: "Mašinski vez i DTF štampa | ADD VERT",
+    title: "Mašinski vez i DTF štampa | Brendiranje tekstila u Srbiji",
     description:
-      "Vez na peškirima, uniformama i posteljini za hotele, apartmane i restorane. Profesionalna vezionica iz Petrovca na Mlavi, isporuka po Srbiji.",
+      "Profesionalni mašinski vez i DTF štampa na tekstilu. Majice, duksevi, kačketi, amblemi i radna odeća sa logom za firme širom Srbije.",
     type: "website",
     locale: "sr_RS",
     siteName: SITE_NAME,
@@ -107,9 +119,9 @@ export const ROOT_METADATA: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mašinski vez i DTF štampa | ADD VERT",
+    title: "Mašinski vez i DTF štampa | Brendiranje tekstila u Srbiji",
     description:
-      "Vez na peškirima, uniformama i posteljini za hotele, apartmane i restorane. Profesionalna vezionica iz Petrovca na Mlavi, isporuka po Srbiji.",
+      "Profesionalni mašinski vez i DTF štampa na tekstilu. Majice, duksevi, kačketi, amblemi i radna odeća sa logom za firme širom Srbije.",
     images: [absoluteUrl(OG_IMAGE.path)],
   },
   icons: {
