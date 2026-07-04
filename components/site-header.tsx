@@ -8,7 +8,7 @@ import { CTA_QUOTE, NAV_ITEMS, SITE_NAME } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
 
 const headerCtaClassName =
-  "inline-flex h-10 items-center justify-center gap-2 bg-white px-5 text-sm font-semibold tracking-wide text-black transition-colors hover:bg-gray-200 rounded-none hidden sm:flex"
+  "hidden h-10 items-center justify-center gap-2 rounded-none bg-white px-5 text-sm font-semibold tracking-wide text-black transition-colors hover:bg-gray-200 lg:inline-flex"
 
 function subscribeToClientMount() {
   return () => {}
@@ -93,14 +93,6 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href={CTA_QUOTE.href}
-              className="mt-2 inline-flex h-12 w-full items-center justify-center gap-2 rounded-none bg-white px-5 text-sm font-semibold tracking-wide text-black transition-colors hover:bg-gray-200"
-              onClick={closeMobileMenu}
-            >
-              <Mail className="size-4" />
-              {CTA_QUOTE.label}
-            </Link>
           </nav>
         </div>
       </div>

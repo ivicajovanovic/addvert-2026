@@ -25,9 +25,7 @@ export function HeroSection() {
       <div className="absolute top-0 right-0 bottom-0 w-full lg:w-1/2 z-0">
         <div className="relative w-full h-full">
           <HeroCarousel />
-          <div className="absolute inset-0 z-20 bg-black/15 lg:hidden" />
-          <div className="absolute inset-0 z-30 bg-gradient-to-r from-background via-background/75 to-background/20 opacity-95 lg:opacity-0" />
-          <div className="absolute inset-0 z-30 bg-gradient-to-t from-background/70 via-transparent to-background/20 lg:hidden" />
+          <div className="absolute inset-0 z-30 bg-[linear-gradient(45deg,rgba(0,0,0,0.72)_0%,rgba(0,0,0,0.52)_32%,rgba(0,0,0,0.22)_64%,rgba(0,0,0,0)_100%)] lg:hidden" />
         </div>
       </div>
 
