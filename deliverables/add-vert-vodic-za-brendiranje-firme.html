@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="sr-Latn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ADD VERT — Kako da vaša firma izgleda ozbiljnije</title>
+    <style>
+      @page { size: A4; margin: 0; }
+      :root { --ink:#111111; --muted:#626262; --line:#d7d7d7; --wash:#f4f4f2; --paper:#ffffff; }
+      * { box-sizing: border-box; }
+      html, body { margin:0; padding:0; background:#ddd; color:var(--ink); font-family:Arial, Helvetica, sans-serif; }
+      .page { position:relative; width:210mm; height:297mm; overflow:hidden; background:var(--paper); padding:17mm 17mm 15mm; page-break-after:always; break-after:page; }
+      .page:last-child { page-break-after:auto; break-after:auto; }
+      .topline { width:28mm; height:1.4mm; margin-bottom:7mm; background:var(--ink); }
+      .eyebrow { margin:0 0 5mm; color:var(--muted); font-size:8.5pt; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
+      h1, h2, h3, p { margin-top:0; }
+      h1 { max-width:145mm; margin-bottom:6mm; font-size:35pt; line-height:.97; letter-spacing:-.065em; }
+      h2 { max-width:145mm; margin-bottom:6mm; font-size:25pt; line-height:1; letter-spacing:-.055em; }
+      h3 { margin-bottom:2.3mm; font-size:11.8pt; line-height:1.15; letter-spacing:-.02em; }
+      p { font-size:11.1pt; line-height:1.47; }
+      .lead { max-width:126mm; color:#303030; font-size:15pt; line-height:1.34; }
+      .small { color:var(--muted); font-size:8.7pt; line-height:1.35; }
+      .page-number { position:absolute; right:17mm; bottom:9mm; color:var(--muted); font-size:8pt; letter-spacing:.08em; }
+      .wordmark { font-weight:800; font-size:11pt; letter-spacing:-.045em; }
+      .footer-brand { position:absolute; left:17mm; bottom:9mm; color:var(--muted); font-size:8pt; letter-spacing:.12em; }
+      .cover { display:flex; flex-direction:column; padding-top:19mm; }
+      .cover h1 { max-width:138mm; font-size:41pt; }
+      .cover .lead { max-width:130mm; margin-bottom:8mm; }
+      .cover-image { width:100%; height:114mm; margin-top:auto; object-fit:cover; object-position:center; filter:saturate(.88) contrast(1.03); }
+      .cover-image-note { display:flex; align-items:center; justify-content:space-between; margin-top:4mm; color:var(--muted); font-size:8.7pt; }
+      .benefits { display:grid; grid-template-columns:repeat(3,1fr); gap:0; max-width:147mm; margin-top:6mm; border-top:1px solid var(--ink); }
+      .benefit { min-height:25mm; padding:4mm 4mm 0 0; border-right:1px solid var(--line); font-size:10pt; font-weight:700; line-height:1.22; }
+      .benefit:not(:first-child) { padding-left:4mm; }
+      .benefit:last-child { border-right:0; }
+      .quote { max-width:154mm; margin:7mm 0 0; padding:5mm 7mm; border-left:2mm solid var(--ink); background:var(--wash); font-size:14pt; font-weight:700; line-height:1.3; letter-spacing:-.025em; }
+      .three { display:grid; grid-template-columns:repeat(3, 1fr); gap:5mm; margin-top:10mm; }
+      .three p { color:#444; font-size:10.2pt; line-height:1.4; }
+      .comparison { display:grid; grid-template-columns:1fr 1fr; gap:5mm; margin-top:7mm; }
+      .comparison-card { min-height:81mm; padding:6mm; background:var(--wash); }
+      .comparison-card h3 { margin-top:5mm; font-size:14pt; }
+      .signal-diagram { display:flex; align-items:flex-end; gap:3mm; height:36mm; padding:4mm; border-bottom:1px solid #bdbdb9; }
+      .signal-item { position:relative; display:block; width:20%; background:#bdbdb9; }
+      .signal-item::after { content:""; position:absolute; left:50%; top:5mm; width:5mm; height:5mm; transform:translateX(-50%); border-radius:50%; background:#777; }
+      .signal-item:nth-child(1) { height:18mm; }
+      .signal-item:nth-child(2) { height:25mm; }
+      .signal-item:nth-child(3) { height:14mm; }
+      .signal-item:nth-child(4) { height:30mm; }
+      .signal-diagram.consistent { align-items:flex-end; gap:2.5mm; }
+      .consistent .signal-item { height:27mm; background:var(--ink); }
+      .consistent .signal-item::after { top:5mm; width:6mm; height:2mm; border-radius:0; background:white; }
+      .comparison-image { width:100%; height:44mm; object-fit:cover; object-position:center; }
+      .caption { margin:2.5mm 0 0; color:var(--muted); font-size:8.2pt; line-height:1.3; }
+      table { width:100%; margin-top:8mm; border-collapse:collapse; font-size:9.6pt; line-height:1.32; }
+      th { padding:3.3mm 3mm; background:var(--ink); color:white; text-align:left; font-size:8.4pt; letter-spacing:.06em; text-transform:uppercase; }
+      td { padding:4.3mm 3mm; border-bottom:1px solid var(--line); vertical-align:top; }
+      tr:last-child td { border-bottom:0; }
+      .callout { margin-top:8mm; padding:5mm 6mm; border:1px solid var(--ink); font-size:10.8pt; line-height:1.4; }
+      .tech-grid { display:grid; grid-template-columns:1fr 1fr; gap:5mm; margin-top:5mm; }
+      .tech { padding:5.5mm; border-top:2mm solid var(--ink); background:var(--wash); }
+      .tech h3 { margin-bottom:4mm; font-size:14pt; }
+      .tech ul { margin:0; padding:0; list-style:none; }
+      .tech li { padding:2.2mm 0; border-top:1px solid #d5d5d2; font-size:10pt; line-height:1.32; }
+      .tech li:first-child { border-top:0; }
+      .tech li::before { content:"—"; margin-right:2mm; }
+      .tips { display:grid; grid-template-columns:1fr 1fr; column-gap:10mm; row-gap:5mm; margin-top:7mm; }
+      .tip { display:grid; grid-template-columns:10mm 1fr; column-gap:3mm; align-items:start; }
+      .tip-number { display:grid; place-items:center; width:10mm; height:10mm; background:var(--ink); color:white; font-size:9pt; font-weight:700; }
+      .tip h3 { margin:0 0 1.5mm; font-size:11.5pt; }
+      .tip p { margin:0; color:#454545; font-size:9.7pt; line-height:1.38; }
+      .checklist { margin-top:6mm; border-top:1px solid var(--ink); }
+      .check { display:grid; grid-template-columns:12mm 1fr; column-gap:4mm; padding:5mm 0; border-bottom:1px solid var(--line); }
+      .check-index { color:var(--muted); font-size:9pt; font-weight:700; letter-spacing:.08em; }
+      .check h3 { margin:0 0 1.5mm; font-size:13pt; }
+      .check p { margin:0; color:#444; font-size:10.2pt; line-height:1.4; }
+      .boxes { margin-top:2mm; color:#333; font-size:9.7pt; line-height:1.7; word-spacing:1mm; }
+      .contact-layout { display:grid; grid-template-columns:1.5fr 1fr; gap:10mm; align-items:end; margin-top:auto; }
+      .contact-card { padding:7mm; background:var(--ink); color:#fff; }
+      .contact-card h3 { margin:0 0 5mm; font-size:17pt; line-height:1.04; letter-spacing:-.04em; }
+      .contact-card p { margin:0; color:#f1f1f1; font-size:10.1pt; line-height:1.48; }
+      .contact-list { margin:6mm 0 0; padding:0; list-style:none; }
+      .contact-list li { padding:2mm 0; border-top:1px solid #4a4a4a; font-size:9.3pt; }
+      .contact-list a { color:white; text-decoration:none; }
+      .qr { width:50mm; height:50mm; display:block; margin:0 auto 3mm; }
+      .qr-label { margin:0; text-align:center; color:var(--muted); font-size:8.6pt; line-height:1.3; }
+      .final-image { width:100%; height:69mm; margin-top:7mm; object-fit:cover; object-position:center; filter:saturate(.82); }
+      @media screen {
+        .page { margin:12px auto; box-shadow:0 8px 24px rgba(0,0,0,.16); }
+        body:has(.page:target) .page { display:none; }
+        body:has(.page:target) .page:target { display:block; }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="page cover" id="page-1">
+      <div class="topline"></div>
+      <p class="eyebrow">Praktičan vodič kompanije ADD VERT</p>
+      <h1>Kako da vaša firma izgleda ozbiljnije</h1>
+      <p class="lead">5 praktičnih odluka za profesionalno brendiranje radne odeće, uniformi i promotivnog tekstila.</p>
+      <p class="small">Saznajte šta prvo treba brendirati, kada izabrati mašinski vez, kada DTF štampu i koje greške umanjuju profesionalni utisak firme.</p>
+      <div class="benefits">
+        <div class="benefit">Šta prvo treba brendirati</div>
+        <div class="benefit">Mašinski vez ili DTF štampa</div>
+        <div class="benefit">Pet grešaka koje treba izbeći</div>
+      </div>
+      <img class="cover-image" src="assets/cover-jakne.jpg" alt="Brendirane jakne sa mašinskim vezom" />
+      <div class="cover-image-note"><span>MAŠINSKI VEZ I DTF ŠTAMPA</span><span class="wordmark">ADD VERT</span></div>
+      <span class="page-number">01 / 07</span>
+    </article>
+
+    <article class="page" id="page-2">
+      <div class="topline"></div>
+      <p class="eyebrow">Odluka 1 / Zašto početi</p>
+      <h2>Vaša odeća govori o firmi pre nego što zaposleni progovori</h2>
+      <p class="lead">Klijenti ne procenjuju firmu samo po proizvodu ili usluzi. Uočavaju i kako zaposleni izgledaju, komuniciraju i predstavljaju kompaniju.</p>
+      <div class="three">
+        <div><h3>Prepoznatljivost</h3><p>Kada je zaposleni jasno obeležen, klijent ga lakše povezuje sa firmom — bilo da dolazi na teren, radi u prodajnom prostoru ili učestvuje na događaju.</p></div>
+        <div><h3>Doslednost</h3><p>Isti modeli odeće, boje i položaji logotipa ostavljaju utisak uređenog sistema. Dovoljno je da se vidi da je izbor napravljen namerno.</p></div>
+        <div><h3>Poverenje</h3><p>Profesionalan izgled ne zamenjuje dobru uslugu, ali može da pokaže da firma vodi računa o detaljima pre prvog razgovora.</p></div>
+      </div>
+      <p class="quote">Brendirana odeća pomaže da dobra usluga izgleda jednako profesionalno kao što zaista jeste.</p>
+      <div class="comparison">
+        <div class="comparison-card"><div class="signal-diagram"><span class="signal-item"></span><span class="signal-item"></span><span class="signal-item"></span><span class="signal-item"></span></div><h3>Neusaglašen izgled</h3><p class="caption">Različiti artikli, položaji znaka i boje bez zajedničkog sistema mogu ostaviti utisak improvizacije.</p></div>
+        <div class="comparison-card"><div class="signal-diagram consistent"><span class="signal-item"></span><span class="signal-item"></span><span class="signal-item"></span><span class="signal-item"></span></div><h3>Dosledan poslovni izgled</h3><p class="caption">Jedna logika izbora — model, boja i položaj logotipa — čini tim lakšim za prepoznavanje.</p></div>
+      </div>
+      <span class="footer-brand">ADD VERT / PRAKTIČAN VODIČ</span><span class="page-number">02 / 07</span>
+    </article>
+
+    <article class="page" id="page-3">
+      <div class="topline"></div>
+      <p class="eyebrow">Odluka 2 / Gde početi</p>
+      <h2>Ne morate brendirati sve. Počnite od onoga što klijenti najčešće vide.</h2>
+      <p class="lead">Za svaki artikal postavite tri pitanja: da li ga klijenti često vide, da li ga zaposleni redovno nose i da li će dovoljno dugo trajati?</p>
+      <table>
+        <thead><tr><th>Delatnost</th><th>Prvi prioritet</th><th>Sledeći korak</th></tr></thead>
+        <tbody>
+          <tr><td>Servis i zanatska firma</td><td>Polo ili radne majice</td><td>Duksevi i jakne</td></tr>
+          <tr><td>Restoran i kafić</td><td>Kecelje i majice</td><td>Košulje ili polo majice</td></tr>
+          <tr><td>Ordinacija i salon</td><td>Tunike ili uniforme</td><td>Peškiri i mantili</td></tr>
+          <tr><td>Hotel i apartmani</td><td>Peškiri i uniforme</td><td>Bade-mantili i dekorativni tekstil</td></tr>
+          <tr><td>Prodavnica</td><td>Majice ili prsluci</td><td>Duksevi i jakne</td></tr>
+          <tr><td>Klub i udruženje</td><td>Majice i duksevi</td><td>Kape, trenerke i amblemi</td></tr>
+        </tbody>
+      </table>
+      <div class="callout"><strong>Najbezbedniji početak:</strong> jedan kvalitetan model odeće, jedna boja, jedan položaj logotipa i količina dovoljna za redovnu upotrebu i zamenu.</div>
+      <p class="small" style="margin-top:5mm">Tabela je smernica, ne pravilo. Vaš posao, prostor i način rada određuju najbolji početak.</p>
+      <span class="footer-brand">ADD VERT / PRAKTIČAN VODIČ</span><span class="page-number">03 / 07</span>
+    </article>
+
+    <article class="page" id="page-4">
+      <div class="topline"></div>
+      <p class="eyebrow">Odluka 3 / Izbor tehnike</p>
+      <h2>Prava tehnika zavisi od logotipa, materijala i načina upotrebe</h2>
+      <p class="lead">Mašinski vez nije uvek bolji izbor, kao što DTF štampa nije samo „jeftinija varijanta“. Dve tehnike rešavaju različite potrebe.</p>
+      <div class="tech-grid">
+        <div class="tech"><h3>Izaberite mašinski vez kada</h3><ul><li>želite diskretan i reprezentativan izgled</li><li>brendirate polo majice, jakne, kape ili peškire</li><li>važni su tekstura i reljef konca</li><li>logo nema gradijente ni veoma sitan tekst</li></ul></div>
+        <div class="tech"><h3>Izaberite DTF kada</h3><ul><li>dizajn ima mnogo boja ili sitnih detalja</li><li>potrebna je veća ili složenija grafika</li><li>važna je vizuelna preciznost motiva</li><li>dizajn sadrži gradijente ili ilustracije</li></ul></div>
+      </div>
+      <div class="comparison">
+        <div><img class="comparison-image" src="assets/vez-kacket.jpg" alt="Mašinski vez na kačketu" /><p class="caption">Mašinski vez: tekstura, reljef i reprezentativan utisak.</p></div>
+        <div><img class="comparison-image" src="assets/dtf-majica.jpg" alt="DTF štampa na majici" /><p class="caption">DTF štampa: precizan prikaz složenije grafike na tekstilu.</p></div>
+      </div>
+      <p class="quote">Konačnu preporuku treba napraviti nakon pregleda logotipa, tekstila, veličine aplikacije i načina održavanja.</p>
+      <span class="footer-brand">ADD VERT / PRAKTIČAN VODIČ</span><span class="page-number">04 / 07</span>
+    </article>
+
+    <article class="page" id="page-5">
+      <div class="topline"></div>
+      <p class="eyebrow">Odluka 4 / Izbegnite greške</p>
+      <h2>Pet grešaka zbog kojih brendirana odeća deluje manje profesionalno</h2>
+      <div class="tips">
+        <div class="tip"><div class="tip-number">01</div><div><h3>Prevelik logo</h3><p>Veći znak nije automatski uočljiviji. Na grudima je često dovoljan manji, jasno postavljen logo.</p></div></div>
+        <div class="tip"><div class="tip-number">02</div><div><h3>Previše informacija</h3><p>Telefon, web adresa, slogan, mreže i lista usluga ne moraju svi stati na jedan komad odeće.</p></div></div>
+        <div class="tip"><div class="tip-number">03</div><div><h3>Neodgovarajući kontrast</h3><p>Tamni logo na tamnoj odeći ili svetao logo na svetloj podlozi može izgubiti čitljivost.</p></div></div>
+        <div class="tip"><div class="tip-number">04</div><div><h3>Pogrešna tehnika</h3><p>Gradijenti i sitni detalji nisu dobri za svaki vez; veoma mali vez može deformisati tanak materijal.</p></div></div>
+        <div class="tip"><div class="tip-number">05</div><div><h3>Nedoslednost</h3><p>Različite veličine znaka, modeli odeće i položaji aplikacije mogu učiniti da tim izgleda neusaglašeno.</p></div></div>
+      </div>
+      <p class="quote">Profesionalno brendiranje nije pitanje koliko elemenata možete dodati, već koliko je malo elemenata potrebno da bi firma bila jasno prepoznatljiva.</p>
+      <span class="footer-brand">ADD VERT / PRAKTIČAN VODIČ</span><span class="page-number">05 / 07</span>
+    </article>
+
+    <article class="page" id="page-6">
+      <div class="topline"></div>
+      <p class="eyebrow">Odluka 5 / Sledeći korak</p>
+      <h2>Napravite osnovni plan brendiranja za 15 minuta</h2>
+      <p class="lead">Ne morate unapred znati svaki detalj. Dovoljno je da pripremite nekoliko osnovnih informacija za dobru procenu.</p>
+      <div class="checklist">
+        <div class="check"><div class="check-index">01</div><div><h3>Odredite gde se odeća koristi</h3><p class="boxes">□ Rad sa klijentima &nbsp; □ Rad na terenu &nbsp; □ Prodajni prostor<br />□ Događaji i promocije &nbsp; □ Svakodnevni rad u objektu</p></div></div>
+        <div class="check"><div class="check-index">02</div><div><h3>Izaberite najvažnije artikle</h3><p>Počnite sa jednim ili dva modela koja će se najčešće koristiti.</p></div></div>
+        <div class="check"><div class="check-index">03</div><div><h3>Odredite osnovne količine</h3><p>Zapišite broj zaposlenih, potrebne veličine i broj rezervnih komada.</p></div></div>
+        <div class="check"><div class="check-index">04</div><div><h3>Pripremite materijal</h3><p>Logo u najboljem dostupnom kvalitetu, željenu boju odeće, približnu veličinu aplikacije i primer stila koji vam se dopada.</p></div></div>
+        <div class="check"><div class="check-index">05</div><div><h3>Zatražite stručnu procenu</h3><p>Pošaljite ove informacije i zatražite preporuku tehnike, materijala, položaja i veličine logotipa.</p></div></div>
+      </div>
+      <div class="callout"><strong>Niste sigurni šta je najbolje za vaš slučaj?</strong><br />Pošaljite ADD VERT-u logo, delatnost, broj zaposlenih i približnu količinu. Dobićete konkretnu preporuku za sledeći korak.</div>
+      <span class="footer-brand">ADD VERT / PRAKTIČAN VODIČ</span><span class="page-number">06 / 07</span>
+    </article>
+
+    <article class="page cover" id="page-7">
+      <div class="topline"></div>
+      <p class="eyebrow">ADD VERT / PETROVAC NA MLAVI</p>
+      <h2>Pretvorite logo u dosledan sistem poslovnog brendiranja</h2>
+      <p class="lead">Na osnovu logotipa, vrste tekstila, količine i načina upotrebe predlažemo odgovarajuću tehniku i poziciju brendiranja.</p>
+      <div class="contact-layout">
+        <div class="contact-card">
+          <h3>Pošaljite logo i približnu količinu</h3>
+          <p>Za konkretan predlog dovoljno je da pošaljete logo, delatnost, približnu količinu i artikle koje razmatrate, ako ih već imate.</p>
+          <ul class="contact-list">
+            <li><a href="tel:+38163693592">063 693 592</a> · <a href="tel:+381645105607">064 51 05 607</a></li>
+            <li><a href="mailto:info@addvert.net">info@addvert.net</a></li>
+            <li><a href="https://addvert.net/kontakt">addvert.net/kontakt</a></li>
+            <li>Srpskih vladara 316, Petrovac na Mlavi</li>
+          </ul>
+        </div>
+        <div>
+          <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=440x440&amp;data=https%3A%2F%2Faddvert.net%2Fkontakt" alt="QR kod ka ADD VERT kontakt formi" />
+          <p class="qr-label">Skenirajte kod i pošaljite upit direktno sa telefona.</p>
+        </div>
+      </div>
+      <img class="final-image" src="assets/zavrsna-jakna.jpg" alt="Detalj brendirane jakne" />
+      <div class="cover-image-note"><span>MAŠINSKI VEZ I DTF ŠTAMPA</span><span class="wordmark">ADD VERT</span></div>
+      <span class="page-number">07 / 07</span>
+    </article>
+  </body>
+</html>

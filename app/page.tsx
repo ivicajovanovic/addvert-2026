@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/hero-section"
 import { StatsStrip } from "@/components/stats-strip"
 import { ServicesSection } from "@/components/services-section"
 import { CommonRequestsSection } from "@/components/common-requests-section"
+import { NewsletterSection } from "@/components/newsletter-section"
 import { HomeGalleryTeaser } from "@/components/home-gallery-teaser"
 import { HomeIndustriesTeaser } from "@/components/home-industries-teaser"
 import { VideoSection } from "@/components/video-section"
@@ -31,6 +32,7 @@ export default function Home() {
       <StatsStrip />
       <ServicesSection />
       <CommonRequestsSection />
+      <NewsletterSection />
       <HomeGalleryTeaser />
       <HomeIndustriesTeaser />
       <VideoSection />

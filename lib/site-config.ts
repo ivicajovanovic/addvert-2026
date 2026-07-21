@@ -10,7 +10,7 @@ export const GOOGLE_ANALYTICS_ID = "G-4EHFES8DG8"
 export const BUSINESS = {
   name: "ADD VERT - Vezionica i štamparija",
   tagline: "Mašinski vez i DTF štampa. Od 2016.",
-  email: "addvert.ivica@gmail.com",
+  email: "info@addvert.net",
   address: {
     street: "Srpskih vladara 316",
     city: "Petrovac na Mlavi",

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Instagram } from "lucide-react"
+import { CookiePreferencesButton } from "@/components/cookie-preferences-button"
 import { BUSINESS, NAV_ITEMS, PHONES, SITE_NAME, SOCIAL_LINKS } from "@/lib/site-config"
 
 function SocialIcon({ label }: { label: string }) {
@@ -96,9 +97,17 @@ export function SiteFooter() {
           <p className="text-xs text-muted-foreground">
             © <span suppressHydrationWarning>{year}</span> {SITE_NAME}. Sva prava zadržana.
           </p>
-          <p className="text-xs text-muted-foreground sm:text-right">
-            Web design &amp; obrada fotografija: Ivica Jovanović.
-          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs text-muted-foreground sm:justify-end">
+            <CookiePreferencesButton />
+            <Link
+              href="/politika-privatnosti"
+              className="transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+            >
+              Politika privatnosti
+            </Link>
+            <span aria-hidden="true" className="text-white/20">·</span>
+            <span>Web design &amp; obrada fotografija: Ivica Jovanović.</span>
+          </div>
         </div>
       </div>
     </footer>

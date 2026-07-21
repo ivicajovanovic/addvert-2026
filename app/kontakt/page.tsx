@@ -1,6 +1,7 @@
 import { JsonLd } from "@/components/json-ld"
 import { ContactSection } from "@/components/contact-section"
 import { FaqSection } from "@/components/faq-section"
+import { NewsletterSection } from "@/components/newsletter-section"
 import { PageHero } from "@/components/page-hero"
 import { buildPageMetadata } from "@/lib/metadata"
 import { getFaqPageJsonLd } from "@/lib/structured-data"
@@ -30,6 +31,7 @@ export default async function KontaktPage({
           size="compact"
         />
         <ContactSection hidePageHeader initialService={usluga} />
+        <NewsletterSection compact />
         <FaqSection showContactLink={false} />
       </main>
     </>
