@@ -87,9 +87,17 @@ export async function POST(request: Request) {
     })
 
     if (!response.ok) {
+      const responseBody = await response.text()
+      console.error("Brevo DOI request failed", {
+        status: response.status,
+        responseBody,
+      })
       return NextResponse.json({ message: "Potvrda trenutno nije dostupna." }, { status: 500 })
     }
-  } catch {
+  } catch (error) {
+    console.error("Brevo DOI request could not be completed", {
+      error: error instanceof Error ? error.message : "Unknown error",
+    })
     return NextResponse.json({ message: "Potvrda trenutno nije dostupna." }, { status: 500 })
   }
 
