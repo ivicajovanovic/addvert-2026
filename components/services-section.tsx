@@ -8,15 +8,15 @@ const services = [
     name: "Mašinski vez",
     description:
       "Polo majice, T-shirt majice, prsluci, jakne, košulje, kačketi, uniforme, cegeri, amblemi za moto klubove i druga udruženja.",
-    href: "/galerija",
-    ctaLabel: "Pogledajte radove",
+    href: "/masinski-vez",
+    ctaLabel: "Saznajte više",
   },
   {
     id: "02",
     name: "DTF štampa",
     description: "T-shirt majice, polo majice, dukserice, kačketi i radna odela. Trajna štampa na tekstilu.",
-    href: "/galerija",
-    ctaLabel: "Pogledajte radove",
+    href: "/stampa-na-majicama",
+    ctaLabel: "Saznajte više",
   },
   {
     id: "03",

@@ -8,6 +8,8 @@ const SITEMAP_ROUTES: Array<{
 }> = [
   { path: "", priority: 1, changeFrequency: "weekly" },
   { path: "/galerija", priority: 0.85, changeFrequency: "weekly" },
+  { path: "/masinski-vez", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/stampa-na-majicama", priority: 0.9, changeFrequency: "monthly" },
   { path: "/industrije", priority: 0.8, changeFrequency: "monthly" },
   { path: "/o-nama", priority: 0.7, changeFrequency: "monthly" },
   { path: "/shop", priority: 0.7, changeFrequency: "weekly" },
