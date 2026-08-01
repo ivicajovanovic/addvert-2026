@@ -5,11 +5,18 @@ const SITEMAP_ROUTES: Array<{
   path: string
   priority: number
   changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]
+  lastModified?: Date
 }> = [
   { path: "", priority: 1, changeFrequency: "weekly" },
   { path: "/galerija", priority: 0.85, changeFrequency: "weekly" },
   { path: "/masinski-vez", priority: 0.9, changeFrequency: "monthly" },
   { path: "/stampa-na-majicama", priority: 0.9, changeFrequency: "monthly" },
+  {
+    path: "/katalozi",
+    priority: 0.8,
+    changeFrequency: "monthly",
+    lastModified: new Date("2026-08-01T00:00:00.000Z"),
+  },
   { path: "/industrije", priority: 0.8, changeFrequency: "monthly" },
   { path: "/o-nama", priority: 0.7, changeFrequency: "monthly" },
   { path: "/shop", priority: 0.7, changeFrequency: "weekly" },
@@ -21,7 +28,7 @@ const SITEMAP_LAST_MODIFIED = new Date("2026-07-03T00:00:00.000Z")
 export default function sitemap(): MetadataRoute.Sitemap {
   return SITEMAP_ROUTES.map((route) => ({
     url: route.path ? `${SITE_URL}${route.path}` : SITE_URL,
-    lastModified: SITEMAP_LAST_MODIFIED,
+    lastModified: route.lastModified ?? SITEMAP_LAST_MODIFIED,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }))

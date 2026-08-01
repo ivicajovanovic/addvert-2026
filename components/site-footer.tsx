@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Facebook, Instagram } from "lucide-react"
 import { CookiePreferencesButton } from "@/components/cookie-preferences-button"
-import { BUSINESS, NAV_ITEMS, PHONES, SITE_NAME, SOCIAL_LINKS } from "@/lib/site-config"
+import { BUSINESS, FOOTER_NAV_ITEMS, PHONES, SITE_NAME, SOCIAL_LINKS } from "@/lib/site-config"
 
 function SocialIcon({ label }: { label: string }) {
   if (label === "Instagram") {
@@ -40,7 +40,7 @@ export function SiteFooter() {
           <div className="lg:col-span-3 space-y-4">
             <h3 className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Navigacija</h3>
             <ul className="space-y-3">
-              {NAV_ITEMS.map((link) => (
+              {FOOTER_NAV_ITEMS.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-white">
                     {link.label}

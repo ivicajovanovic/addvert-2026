@@ -49,6 +49,18 @@ export const SOCIAL_LINKS = [
 
 export const NAV_ITEMS = [
   { label: "Usluge", href: "/#usluge" },
+  { label: "Katalozi", href: "/katalozi" },
+  { label: "Galerija", href: "/galerija" },
+  { label: "O nama", href: "/o-nama" },
+  { label: "Pokloni", href: "/shop" },
+  { label: "Kontakt", href: "/kontakt" },
+] as const
+
+// Footer keeps a direct path to the Industries page even though the primary
+// navigation is deliberately limited to six choices.
+export const FOOTER_NAV_ITEMS = [
+  { label: "Usluge", href: "/#usluge" },
+  { label: "Katalozi", href: "/katalozi" },
   { label: "Galerija", href: "/galerija" },
   { label: "Industrije", href: "/industrije" },
   { label: "O nama", href: "/o-nama" },
