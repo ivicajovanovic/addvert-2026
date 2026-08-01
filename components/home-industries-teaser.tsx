@@ -20,7 +20,7 @@ export function HomeIndustriesTeaser() {
               <p className="text-muted-foreground text-lg max-w-sm mb-8">{industriesIntro}</p>
               <Link
                 href="/industrije"
-                className="inline-flex items-center gap-2 text-sm font-medium text-white transition-colors hover:text-white/80"
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-none bg-white px-6 text-sm font-semibold tracking-wide text-black transition-colors hover:bg-gray-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
               >
                 Sve industrije
                 <ArrowRight className="size-4" aria-hidden="true" />
