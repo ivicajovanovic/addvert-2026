@@ -32,9 +32,9 @@ export default function Home() {
       <StatsStrip />
       <ServicesSection />
       <CommonRequestsSection />
-      <NewsletterSection />
       <HomeGalleryTeaser />
       <HomeIndustriesTeaser />
+      <NewsletterSection />
       <VideoSection />
       <DigitalThreadSection />
       <ProcessSection />

@@ -25,7 +25,7 @@ export function CatalogueCoverImage({ cover, title }: CatalogueCoverProps) {
     <img
       src={cover.src}
       alt={cover.alt}
-      className="h-full w-full object-cover"
+      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
       loading="lazy"
       onError={() => setHasImageError(true)}
     />

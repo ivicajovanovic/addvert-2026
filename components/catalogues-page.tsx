@@ -39,9 +39,21 @@ function CatalogCard({ catalogue }: { catalogue: Catalogue }) {
   const hasExternalCatalogue = Boolean(catalogue.flipHref || catalogue.pdfHref)
 
   return (
-    <article className="flex h-full flex-col border-t border-white/10 pt-6 md:pt-8">
-      <div className="relative aspect-[3/4] overflow-hidden border border-white/20 bg-white/[0.03]">
+    <article className="flex h-full flex-col pt-6 md:pt-8">
+      <div className="group relative aspect-[3/4] overflow-hidden border border-white/20 bg-white/[0.03]">
         <CatalogueCoverImage cover={catalogue.cover} title={catalogue.title} />
+        {catalogue.flipHref ? (
+          <div className="absolute inset-0 hidden items-center justify-center bg-black/60 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100 md:flex">
+            <a
+              href={catalogue.flipHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="translate-y-4 text-xs font-medium uppercase tracking-widest text-white/70 transition-transform duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            >
+              Pogledajte katalog
+            </a>
+          </div>
+        ) : null}
       </div>
 
       <div className="flex flex-1 flex-col pt-6">
@@ -67,7 +79,7 @@ function CatalogCard({ catalogue }: { catalogue: Catalogue }) {
                 href={catalogue.pdfHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center gap-2 text-sm font-medium text-muted-foreground underline decoration-white/30 underline-offset-4 transition-colors hover:text-white hover:decoration-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+                className="inline-flex min-h-11 items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
               >
                 Otvori PDF katalog
                 <Download className="size-4" strokeWidth={1.5} aria-hidden="true" />

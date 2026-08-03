@@ -15,7 +15,7 @@ export function NewsletterSection({ compact = false }: NewsletterSectionProps) {
         <div className="lg:col-span-5">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">Besplatan vodič</p>
           <h2 className="mt-4 text-4xl font-bold tracking-tighter text-white md:text-5xl">
-            Kako da vaša firma izgleda ozbiljnije
+            Kako da vaša firma izgleda profesionalnije
           </h2>
           <div className="mt-6 h-px w-12 bg-white" />
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">

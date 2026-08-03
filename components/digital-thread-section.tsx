@@ -9,7 +9,7 @@ export function DigitalThreadSection() {
           <div className="md:col-span-4">
             <ScrollReveal animation="fade" duration={500}>
               <h2 className="text-xl md:text-2xl font-medium tracking-tight text-muted-foreground sticky top-24">
-                Filozofija veza
+                ADD VERT pristup
               </h2>
             </ScrollReveal>
           </div>
@@ -20,10 +20,10 @@ export function DigitalThreadSection() {
             <ScrollReveal animation="slide-up" delay={100} duration={600}>
               <div className="space-y-6">
                 <blockquote className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] text-balance">
-                  &ldquo;Vez je kod koji ostaje. Konac gradi sliku, bod nosi odluku, a dizajn pretvara ideju u predmet
-                  koji traje.&rdquo;
+                  &ldquo;Svaki motiv prilagođavamo vrsti materijala, dimenziji i nameni proizvoda. Isti fajl ne može dati
+                  isti rezultat na majici, kačketu, peškiru i radnoj uniformi.&rdquo;
                 </blockquote>
-                <p className="text-lg text-muted-foreground font-medium">&mdash; ADD VERT Filozofija</p>
+                <p className="text-lg text-muted-foreground font-medium">ADD VERT pristup</p>
               </div>
             </ScrollReveal>
 
@@ -31,14 +31,12 @@ export function DigitalThreadSection() {
             <ScrollReveal animation="fade" delay={300} duration={500}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 pt-8 border-t border-white/10">
                 <p className="text-base md:text-lg leading-relaxed text-muted-foreground">
-                  U svetu brzih digitalnih slika, vez daje dizajnu težinu, teksturu i trajanje. Zato pripremu ne
-                  tretiramo kao običan fajl, već kao osnovu proizvoda koji treba da izgleda dobro, nosi se dugo i
-                  izdrži stvarnu upotrebu.
+                  Podešavamo gustinu bodova, podlogu, kompenzaciju, redosled vezenja i napetost konca. Tako dobijamo
+                  čist vez bez deformacija, nabiranja i nepotrebne tvrdoće.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed text-muted-foreground">
-                  Taj pristup vodi svaki naš rad. Od gustine bodova do izbora podloge i napona konca, svaka odluka ima
-                  razlog. Vez je spoj dizajna, tehnike i materijala, a rezultat je brend koji se ne vidi samo na ekranu,
-                  već se nosi, dodiruje i traje.
+                  Cilj nije samo da vez dobro izgleda kada izađe iz mašine. Mora ostati stabilan, uredan i postojan
+                  tokom nošenja, korišćenja i pranja.
                 </p>
               </div>
             </ScrollReveal>
