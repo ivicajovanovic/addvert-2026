@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { CTA_QUOTE, PRIMARY_PHONE } from "@/lib/site-config"
+import { CTA_QUOTE } from "@/lib/site-config"
 import { ScrollReveal } from "./scroll-reveal"
 
 export function MidCtaSection() {
@@ -19,7 +19,7 @@ export function MidCtaSection() {
               Pošaljite nam upit ili nas pozovite. Odgovaramo isti radni dan.
             </p>
 
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6 pt-2">
+            <div className="flex justify-center pt-2">
               <Button
                 size="lg"
                 className="rounded-none h-14 px-10 text-base font-semibold tracking-wide bg-white text-black hover:bg-gray-200"
@@ -27,12 +27,6 @@ export function MidCtaSection() {
               >
                 <Link href={CTA_QUOTE.href}>Zatražite ponudu</Link>
               </Button>
-              <a
-                href={`tel:${PRIMARY_PHONE.tel}`}
-                className="text-sm font-medium text-muted-foreground underline-offset-4 transition-colors hover:text-white hover:underline"
-              >
-                {PRIMARY_PHONE.display}
-              </a>
             </div>
           </div>
         </ScrollReveal>
